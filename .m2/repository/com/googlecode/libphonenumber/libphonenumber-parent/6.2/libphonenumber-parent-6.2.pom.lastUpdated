@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Oct 17 09:26:14 EDT 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1602941174278
+@default-jai-https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.lastUpdated=1602941174044
+https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.error=Could not transfer artifact com.googlecode.libphonenumber\:libphonenumber-parent\:pom\:6.2 from/to jai (https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases)\: connect timed out
+https\://repo1.perfectomobile.com/public/repositories/maven/.lastUpdated=1602941073781
+https\://repo1.perfectomobile.com/public/repositories/maven/.error=
