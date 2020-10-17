@@ -1,7 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Sat Oct 17 09:17:48 EDT 2020
-https\://repo.maven.apache.org/maven2/.lastUpdated=1602940668506
-@default-jai-https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.lastUpdated=1602940668431
-https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.error=Could not transfer artifact com.jayway.jsonpath\:json-path-assert\:pom\:2.2.0 from/to jai (https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases)\: connect timed out
-https\://repo1.perfectomobile.com/public/repositories/maven/.lastUpdated=1602940568087
-https\://repo1.perfectomobile.com/public/repositories/maven/.error=

@@ -1,7 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Sat Oct 17 09:31:17 EDT 2020
-https\://repo.maven.apache.org/maven2/.lastUpdated=1602941477403
-@default-jai-https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.lastUpdated=1602941477334
-https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.error=Could not transfer artifact com.github.fge\:msg-simple\:pom\:1.1 from/to jai (https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases)\: connect timed out
-https\://repo1.perfectomobile.com/public/repositories/maven/.lastUpdated=1602941377136
-https\://repo1.perfectomobile.com/public/repositories/maven/.error=
