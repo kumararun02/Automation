@@ -9,7 +9,7 @@
 	<test name="Webservice Sample" enabled="true">
 		<groups>
 			<run>
-				<include name="@getPerfectoUsers" />
+				<include name="@WebService" />
 			</run>
 		</groups>
 		<classes>

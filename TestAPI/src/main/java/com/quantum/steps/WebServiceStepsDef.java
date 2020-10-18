@@ -13,12 +13,14 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import com.jayway.jsonpath.JsonPath;
 import com.qmetry.qaf.automation.rest.RestRequestBean;
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.step.WsStep;
 import com.qmetry.qaf.automation.ws.rest.RestTestBase;
 import com.sun.jersey.api.client.ClientResponse;
+import com.utils.TestAppVerify;
 
 /**
  * @author kulin.sitwala
@@ -64,7 +66,21 @@ public class WebServiceStepsDef {
 	public static void iTestResponseData() {
 		System.out.println("@#@#@#@#@#@@#@#@#@ Response body " + new RestTestBase().getResponse().getMessageBody());
 	}
-
 	
+	@QAFTestStep(description = "Test response should have status {status}")
+	public static void iTestResponseShouldHaveStatus(String status) {
+		TestAppVerify.verify(new RestTestBase().getResponse().getStatus().name(), status);
+	}
+
+	@QAFTestStep(description = "Test response should have value contains {expectedvalue} at {jsonpath}")
+	public static void iTestResponseDataKeyAndValueContains(String expected, String path) {
+		if (!path.startsWith("$"))
+			path = "$." + path;
+		String actual = JsonPath.read(new RestTestBase().getResponse().getMessageBody(), path);
+		System.out.println("@#@#@#@#@#@@#@#@#@  : " +actual);
+		
+		TestAppVerify.verify(actual.contains(expected));
+		//assertThat(String.valueOf(actual), Matchers.containsString(value));
+	}
 
 }
